@@ -1,0 +1,47 @@
+{
+  "eligible_source_cohort": {
+    "n": 5171,
+    "lr_n": 2092,
+    "saline_n": 3079,
+    "deaths": 1726,
+    "mortality_pct": 33.37845677818604,
+    "lr_pct": 40.456391413653066,
+    "saline_pct": 59.54360858634693,
+    "missing_any64_n": 4642,
+    "missing_any64_pct": 89.7698704312512,
+    "LR_deaths": 625,
+    "LR_mortality_pct": 29.875717017208416,
+    "saline_deaths": 1101,
+    "saline_mortality_pct": 35.75836310490419
+  },
+  "imputed_sample": {
+    "n": 2089,
+    "lr_n": 872,
+    "saline_n": 1217,
+    "deaths": 721,
+    "mortality_pct": 34.51412158927717,
+    "lr_pct": 41.74246050741982,
+    "saline_pct": 58.25753949258018,
+    "missing_any64_n": 1560,
+    "missing_any64_pct": 74.67687888942078,
+    "LR_deaths": 270,
+    "LR_mortality_pct": 30.963302752293576,
+    "saline_deaths": 451,
+    "saline_mortality_pct": 37.05834018077239
+  },
+  "complete_case_sample": {
+    "n": 529,
+    "lr_n": 258,
+    "saline_n": 271,
+    "deaths": 197,
+    "mortality_pct": 37.24007561436673,
+    "lr_pct": 48.77126654064272,
+    "saline_pct": 51.22873345935728,
+    "missing_any64_n": 0,
+    "missing_any64_pct": 0.0,
+    "LR_deaths": 85,
+    "LR_mortality_pct": 32.945736434108525,
+    "saline_deaths": 112,
+    "saline_mortality_pct": 41.32841328413284
+  }
+}

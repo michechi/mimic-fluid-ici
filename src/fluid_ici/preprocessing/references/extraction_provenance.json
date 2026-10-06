@@ -1,0 +1,33 @@
+{
+  "source": "Frozen clinical extraction code; clinical rules retained in this portable package.",
+  "stages": {
+    "stage_core.py": {
+      "upstream_sha256": "9718c63b40ffe656b1966106c7c41595a2d7bb8e76d16103a5bfb265c84c7281",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    },
+    "stage_medications.py": {
+      "upstream_sha256": "4eb3049eec174326bccf6aeb4ca9c50b3ae9b27cefadb425b93d0a6d73a951df",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    },
+    "stage_clinical.py": {
+      "upstream_sha256": "66e7e2a5999bffc21375e134ac1d46d48946ae824234974c71874cb6e4ee675e",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    },
+    "build_eligibility.py": {
+      "upstream_sha256": "455272f608c81307df15ee22e9f0db7f7be308884b88324be64fcc710acf27b5",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    },
+    "build_baseline.py": {
+      "upstream_sha256": "0d91c95910179fbc26765dcf4de8bd3163908b78b35b83271cd053df327f93f9",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    },
+    "validate_baseline.py": {
+      "upstream_sha256": "ea06b254b6b1291914d2fefd01b0445f34f45535d9e5eeed19a70981fb768f94",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    },
+    "definitions.py": {
+      "upstream_sha256": "942375022417eff6f7472b4260316ce5bba90d79e1b67690e1b75c1eca9df804",
+      "adaptation": "Relative imports; portable settings; no clinical SQL changes."
+    }
+  }
+}

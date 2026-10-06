@@ -1,0 +1,18 @@
+{
+  "python": "3.12.3",
+  "duckdb": "1.5.5",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "pyarrow": "25.0.1",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.9.1",
+  "R": "4.3.3",
+  "ggplot2": "3.4.4",
+  "isolated_environment": true,
+  "raw_reconstruction_complete": true,
+  "models_refitted_from_reconstructed_data": true,
+  "six_synthetic_tests_passed": true,
+  "independent_LP_checks": 60,
+  "largest_LP_discrepancy": 2.7293661775118494e-10,
+  "native_latex_preview_compilation": "both figures passed"
+}

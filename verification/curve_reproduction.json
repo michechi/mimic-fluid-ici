@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "expected_sha256": "fd6b31213f4393d8cf47877961d0f755c151f02e304877595357f021e7625928",
+  "absolute_tolerance": 1e-08,
+  "max_absolute_difference_by_column": {
+    "delta": 2.220446049250313e-16,
+    "odds_multiplier": 4.440892098500626e-16,
+    "chi": 1.1102230246251565e-16,
+    "n": 0.0,
+    "p": 0.0,
+    "lower_risk": 1.1102230246251565e-16,
+    "ipi_risk": 1.1102230246251565e-16,
+    "upper_risk": 1.1102230246251565e-16,
+    "lower_difference_pp": 5.773159728050814e-15,
+    "ipi_difference_pp": 5.495603971894525e-15,
+    "upper_difference_pp": 1.1129985821867194e-14,
+    "plugin_baseline_risk": 5.551115123125783e-17,
+    "ipi_lr_probability": 2.220446049250313e-16
+  },
+  "aggregate_rows_compared": 16362,
+  "delta_values_per_sample": 81,
+  "chi_values_per_sample": 101
+}

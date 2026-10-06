@@ -1,0 +1,386 @@
+[
+  {
+    "domain": "Demographics",
+    "label": "Approximate age, capped at 90 years",
+    "column": "x_age",
+    "definition": "Approximate age at t0 from anchor age/year; ages over 89 in the anchor year are topcoded. For both study samples, age is capped at 90 before fitting."
+  },
+  {
+    "domain": "Demographics",
+    "label": "Recorded sex",
+    "column": "x_sex",
+    "definition": "Sex recorded in patients.gender."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "ICU care unit at treatment",
+    "column": "x_careunit_at_t0",
+    "definition": "Care unit from the transfer interval containing t0; only seven specified ICUs eligible."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "Approximate calendar period (lower year bound)",
+    "column": "x_calendar_year_low",
+    "definition": "Lower end of inferred historical calendar-year interval. Approximate context, not exact real year."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "Hours since ICU admission",
+    "column": "x_hours_since_icu",
+    "definition": "Hours between ICU entry and t0; at least 6 and less than 48."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "Hospital admission type",
+    "column": "x_admission_type",
+    "definition": "Recorded urgency/type of current hospital admission."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "Hospital admission source",
+    "column": "x_admission_location",
+    "definition": "Recorded source of current hospital admission."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "Hours since hospital admission",
+    "column": "x_hours_since_hospital",
+    "definition": "Hours between hospital admission and t0."
+  },
+  {
+    "domain": "Admission and ICU context",
+    "label": "Number of earlier observed hospitalizations",
+    "column": "x_prior_hospitalizations",
+    "definition": "Earlier observed hospitalizations completed before the current admission; count is not lifetime utilization."
+  },
+  {
+    "domain": "Infection-related timing",
+    "label": "Hours since latest antimicrobial administration",
+    "column": "x_hours_since_antibiotic",
+    "definition": "Hours since latest qualifying recorded systemic antimicrobial administration, within 24 hours."
+  },
+  {
+    "domain": "Infection-related timing",
+    "label": "Hours since latest blood-culture collection",
+    "column": "x_hours_since_blood_culture",
+    "definition": "Hours since latest blood-culture collection, within 24 hours. Culture growth not used."
+  },
+  {
+    "domain": "Vital signs and weight",
+    "label": "Mean arterial pressure",
+    "column": "x_map_last_value",
+    "definition": "Latest qualifying map; mmHg. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Vital signs and weight",
+    "label": "Heart rate",
+    "column": "x_heart_rate_last_value",
+    "definition": "Latest qualifying heart rate; beats/min. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Vital signs and weight",
+    "label": "Respiratory rate",
+    "column": "x_resp_rate_last_value",
+    "definition": "Latest qualifying resp rate; breaths/min. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Vital signs and weight",
+    "label": "Temperature",
+    "column": "x_temperature_last_value",
+    "definition": "Latest qualifying temperature; degrees C. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Vital signs and weight",
+    "label": "Peripheral oxygen saturation",
+    "column": "x_spo2_last_value",
+    "definition": "Latest qualifying spo2; percent. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Vital signs and weight",
+    "label": "Body weight",
+    "column": "x_weight_last_value",
+    "definition": "Latest qualifying weight; kg. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Glasgow Coma Scale components",
+    "label": "Eye response",
+    "column": "x_gcs_eye_last_value",
+    "definition": "Latest qualifying gcs eye; component score 1-4. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Glasgow Coma Scale components",
+    "label": "Verbal response",
+    "column": "x_gcs_verbal_last_value",
+    "definition": "Latest qualifying gcs verbal; component score 1-5. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Glasgow Coma Scale components",
+    "label": "Motor response",
+    "column": "x_gcs_motor_last_value",
+    "definition": "Latest qualifying gcs motor; component score 1-6. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Lactate",
+    "column": "x_lactate_last_value",
+    "definition": "Latest qualifying lactate; mmol/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Creatinine",
+    "column": "x_creatinine_last_value",
+    "definition": "Latest qualifying creatinine; mg/dL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Sodium",
+    "column": "x_sodium_last_value",
+    "definition": "Latest qualifying sodium; mEq/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Chloride",
+    "column": "x_chloride_last_value",
+    "definition": "Latest qualifying chloride; mEq/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Bicarbonate",
+    "column": "x_bicarbonate_last_value",
+    "definition": "Latest qualifying bicarbonate; mEq/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Potassium",
+    "column": "x_potassium_last_value",
+    "definition": "Latest qualifying potassium; mEq/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Blood urea nitrogen",
+    "column": "x_bun_last_value",
+    "definition": "Latest qualifying bun; mg/dL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Glucose",
+    "column": "x_glucose_lab_last_value",
+    "definition": "Latest qualifying glucose lab; mg/dL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Hemoglobin",
+    "column": "x_hemoglobin_last_value",
+    "definition": "Latest qualifying hemoglobin; g/dL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Platelet count",
+    "column": "x_platelets_last_value",
+    "definition": "Latest qualifying platelets; K/uL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "White blood cell count",
+    "column": "x_wbc_last_value",
+    "definition": "Latest qualifying wbc; K/uL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Albumin",
+    "column": "x_albumin_last_value",
+    "definition": "Latest qualifying albumin; g/dL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Anion gap",
+    "column": "x_anion_gap_last_value",
+    "definition": "Latest qualifying anion gap; mEq/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Bilirubin",
+    "column": "x_bilirubin_last_value",
+    "definition": "Latest qualifying bilirubin; mg/dL. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "International normalized ratio",
+    "column": "x_inr_last_value",
+    "definition": "Latest qualifying inr; ratio. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Partial thromboplastin time",
+    "column": "x_ptt_last_value",
+    "definition": "Latest qualifying ptt; seconds. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Blood-gas pH",
+    "column": "x_ph_blood_last_value",
+    "definition": "Latest qualifying ph blood; pH. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Alanine aminotransferase",
+    "column": "x_alt_last_value",
+    "definition": "Latest qualifying alt; IU/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Laboratory measurements",
+    "label": "Aspartate aminotransferase",
+    "column": "x_ast_last_value",
+    "definition": "Latest qualifying ast; IU/L. Both event and recording times must precede t0."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Number of documented active vasopressors",
+    "column": "x_pressor_drugs_active_documented",
+    "definition": "Distinct vasopressor item IDs with positive-rate infusion crossing t0 and recorded before t0. Zero means no qualifying record."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Recorded prior saline volume",
+    "column": "x_recorded_prior_ns_ml",
+    "definition": "mL from completed, recorded main saline input records before t0 in this ICU episode. Incomplete total exposure ascertainment."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Recorded prior lactated Ringer's volume",
+    "column": "x_recorded_prior_lr_ml",
+    "definition": "mL from completed, recorded main LR input records before t0 in this ICU episode. Incomplete total exposure ascertainment."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Maximum documented ongoing saline rate",
+    "column": "x_ongoing_ns_max_rate_ml_h",
+    "definition": "Maximum positive recorded rate in mL/hour among qualifying pre-documented ongoing saline continuous-IV records. Zero if none. Not summed rate or delivered volume."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Maximum documented ongoing lactated Ringer's rate",
+    "column": "x_ongoing_lr_max_rate_ml_h",
+    "definition": "Maximum positive recorded rate in mL/hour among qualifying pre-documented ongoing LR continuous-IV records. Zero if none. Not summed rate or delivered volume."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Recorded net urine volume, previous 6 hours",
+    "column": "x_recorded_urine_ml_6h",
+    "definition": "Six-hour recorded net urine volume in mL, using pretreatment event and recording times and subtracting irrigation inflow. Missing if unobserved, negative, or above the analyst quarantine threshold of 6000 mL. Raw summaries remain in the private endpoint_linked_source staging table; upper threshold is not a validated physiological limit."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Latest oxygen-delivery device",
+    "column": "x_oxygen_device_last",
+    "definition": "Latest documented oxygen-delivery device string in the preceding six hours."
+  },
+  {
+    "domain": "Prior fluids, organ support, and urine output",
+    "label": "Charted evidence of renal replacement therapy",
+    "column": "x_rrt_chart_evidence_6h",
+    "definition": "Any active-dialysis chart evidence recorded in prior six hours. Zero is no evidence, not confirmed absence of RRT."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Myocardial infarction",
+    "column": "x_history_myocardial_infarct",
+    "definition": "Prior-admission ICD evidence for myocardial infarct using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Congestive heart failure",
+    "column": "x_history_congestive_heart_failure",
+    "definition": "Prior-admission ICD evidence for congestive heart failure using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Peripheral vascular disease",
+    "column": "x_history_peripheral_vascular_disease",
+    "definition": "Prior-admission ICD evidence for peripheral vascular disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Cerebrovascular disease",
+    "column": "x_history_cerebrovascular_disease",
+    "definition": "Prior-admission ICD evidence for cerebrovascular disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Dementia",
+    "column": "x_history_dementia",
+    "definition": "Prior-admission ICD evidence for dementia using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Chronic pulmonary disease",
+    "column": "x_history_chronic_pulmonary_disease",
+    "definition": "Prior-admission ICD evidence for chronic pulmonary disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Rheumatic disease",
+    "column": "x_history_rheumatic_disease",
+    "definition": "Prior-admission ICD evidence for rheumatic disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Peptic ulcer disease",
+    "column": "x_history_peptic_ulcer_disease",
+    "definition": "Prior-admission ICD evidence for peptic ulcer disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Mild liver disease",
+    "column": "x_history_mild_liver_disease",
+    "definition": "Prior-admission ICD evidence for mild liver disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Diabetes without chronic complications",
+    "column": "x_history_diabetes_without_cc",
+    "definition": "Prior-admission ICD evidence for diabetes without cc using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Diabetes with chronic complications",
+    "column": "x_history_diabetes_with_cc",
+    "definition": "Prior-admission ICD evidence for diabetes with cc using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Hemiplegia or paraplegia",
+    "column": "x_history_paraplegia",
+    "definition": "Prior-admission ICD evidence for paraplegia using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Renal disease",
+    "column": "x_history_renal_disease",
+    "definition": "Prior-admission ICD evidence for renal disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Malignancy",
+    "column": "x_history_malignant_cancer",
+    "definition": "Prior-admission ICD evidence for malignant cancer using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Moderate or severe liver disease",
+    "column": "x_history_severe_liver_disease",
+    "definition": "Prior-admission ICD evidence for severe liver disease using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "Metastatic solid tumor",
+    "column": "x_history_metastatic_solid_tumor",
+    "definition": "Prior-admission ICD evidence for metastatic solid tumor using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  },
+  {
+    "domain": "Medical history from earlier hospitalizations",
+    "label": "HIV/AIDS",
+    "column": "x_history_aids",
+    "definition": "Prior-admission ICD evidence for aids using pinned Charlson/Quan mappings; 1 = evidence, 0 = no mapped code in observed earlier admissions, missing = no earlier admission history. Not a complete disease-history measure."
+  }
+]

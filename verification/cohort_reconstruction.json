@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "comparison": "Fresh raw-data reconstruction versus frozen study datasets; sorted by patient/decision keys.",
+  "absolute_tolerance": 1e-08,
+  "relative_tolerance": 1e-12,
+  "samples": {
+    "source_cohort": {
+      "n": 5171,
+      "columns_checked": 70,
+      "passed": true,
+      "missingness_discrepancies": 0,
+      "value_discrepancies": 0,
+      "maximum_absolute_numeric_difference": 0
+    },
+    "imputed_sample": {
+      "n": 2089,
+      "columns_checked": 67,
+      "passed": true,
+      "missingness_discrepancies": 0,
+      "value_discrepancies": 0,
+      "maximum_absolute_numeric_difference": 0
+    },
+    "complete_case_sample": {
+      "n": 529,
+      "columns_checked": 67,
+      "passed": true,
+      "missingness_discrepancies": 0,
+      "value_discrepancies": 0,
+      "maximum_absolute_numeric_difference": 0
+    }
+  }
+}
